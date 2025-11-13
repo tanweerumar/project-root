@@ -1,0 +1,165 @@
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header and Branding */
+header {
+  background: var(--color-primary);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.logo-icon {
+  height: 40px;
+}
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-bg);
+  font-weight: bold;
+  white-space: nowrap;
+}
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #007cf0, #00dfd8);
+  color: white;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.btn {
+  background: var(--color-accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+  scroll-margin-top: 120px;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+/* Services */
+.service-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-card {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Partners */
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.partners-logos img {
+  height: 60px;
+}
+
+/* Contact */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact button {
+  background: var(--color-accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Dark Mode */
+body.dark {
+  --color-bg: #0A2540;
+  --color-primary: #FFFFFF;
+  --color-secondary: #CCCCCC;
+  --color-accent: #00DFD8;
+  --color-highlight: #FFC845;
+}

@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #0A2540;   /* deep navy */
+  --color-accent: #00DFD8;    /* teal accent */
+  --color-secondary: #707F8A; /* neutral grey‑blue */
+  --color-highlight: #FFC845; /* gold accent */
+  --color-bg: #FFFFFF;        /* white background */
+
+  --font-heading: "Poppins", "Montserrat", sans‑serif;
+  --font-body: "Segoe UI", Arial, sans‑serif;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MalMalBusiness LLC</title>
+  <link rel="stylesheet" href="styles/branding.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="assets/logo-icon.svg" alt="Logo icon" class="logo-icon">
+        <span class="logo-text">MalMalBusiness LLC</span>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Driving Innovation & Strategy</h1>
+      <p>We empower organizations through tailored digital solutions.</p>
+      <a href="#contact" class="btn">Book a Discovery Call</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>MalMalBusiness LLC helps businesses transform with technology and strategy. We focus on measurable impact, driving long-term success for our clients.</p>
+    </div>
+  </section>
+
+  <section id="services" class="section services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-card">
+          <h3>Digital Strategy</h3>
+          <p>We craft roadmaps to guide your digital journey with precision.</p>
+        </div>
+        <div class="service-card">
+          <h3>UX & Design</h3>
+          <p>User-centered design that elevates digital experiences.</p>
+        </div>
+        <div class="service-card">
+          <h3>Cloud Integration</h3>
+          <p>Optimize operations with cloud-first, scalable architecture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners" class="section">
+    <div class="container">
+      <h2>Our Partners</h2>
+      <p>We work with global tech leaders to deliver top-tier solutions.</p>
+      <div class="partners-logos">
+        <img src="https://via.placeholder.com/120x60" alt="Partner 1">
+        <img src="https://via.placeholder.com/120x60" alt="Partner 2">
+        <img src="https://via.placeholder.com/120x60" alt="Partner 3">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form onsubmit="return validateForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MalMalBusiness LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
